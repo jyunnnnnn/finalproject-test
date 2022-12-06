@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搶救學分大作戰</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="final.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container1" class="col-12">
+        <div class="col-5"><h2>搶救學分大作戰</h2></div>
+        <div class="col-7" id="login">註冊登入</div>
+    </div>
+    <div  id="container2" class="col-12" style="position:relative">
+        <div class="col-1">
+            <div id="listtt">
+                <select id="toselect" name="toselect" onchange="select()" class="pretty-select">
+                    <option value="ch"> 下拉選擇科目</option>
+
+                    <option disabled="disabled">----------------</option>
+                    <option value="caculus">微積分</option>
+                    <option value="discrete">離散數學</option>
+                    <option value="itc">計算機概論</option>
+                    <option value="linear">線性代數</option>
+                    <option value="probability">機率論</option>
+                </select>
+            </div>
+           
+            <div>播放紀錄</div>
+            <div>選擇科目</div>
+            <div style="color:brown">時間紀錄
+                <input id="starttime" type="button" value="開始計時" onclick="timerun()">
+                <input id="stoptime" type="button" value="停止計時" onclick="stoptimerun()"></div>
+            <div><a href="game.html" target="_blank" style="color:rgb(8, 43, 241);text-decoration:none";>抽獎遊戲</a></div>
+        </div>
+        <div class="col-10" id="content">
+            <p id="select"></p>
+            <p id="display"></p>
+            
+            
+        </div>
+        <div  class="col-1">
+            <img  id="level" src="觀看紀錄.jpg" alt="觀看紀錄圖片" style=" width: 100%; float:right;">
+            <p style="color:rgba(0, 0, 0, 0.582);text-decoration:none;text-align: center;"; id="levelmsg"></p>
+        </div > 
+        
+        
+    </div>
+    
+    <footer class="col-12"> 
+        <p id="123" style="color: pink;"></p>
+        <a href="https://www.youtube.com/" target="_blank"  style="color:red;text-decoration:none";>Youtube</a>
+        <a href="https://www.youtube.com/c/NYCUOCW" target="_blank"  style="color:orange;text-decoration:none";>NYCU OCW</a>
+        <a href="https://www.youtube.com/@NTUCASE" target="_blank"  style="color:rgb(232, 224, 3);text-decoration:none";>
+            臺大科學教育發展中心CASE</a>
+        <a href="https://www.youtube.com/@htyauiem" target="_blank"  style="color:green;text-decoration:none";>姚賀騰博士先生</a>
+    </footer>
+    
+</body>
+</html>
