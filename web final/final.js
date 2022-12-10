@@ -98,7 +98,6 @@ function start(){
     foo=document.getElementById("123");
     foo.innerHTML="目前累積使用網站"+Math.floor(parseInt(localStorage.getItem("time"))/3600)+"小時"+Math.floor(parseInt(localStorage.getItem("time"))/60)+"分鐘"+parseInt(localStorage.getItem("time"))%60+"秒";
     select();
-    update();
     document.getElementById("gotoback").addEventListener("click",select,false);
     /*document.getElementById("starttime").addEventListener("click",timerun,false);
     document.getElementById("starttime").addEventListener("click",stoptimerun,false);*/
